@@ -13,9 +13,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-family: 'Lato', sans-serif;">
+<body class=" font-family: 'Lato', sans-serif md:mr-20 md:ml-20  ">
     <header>
-        <nav class="m-20">
+        <nav class="hidden lg:flex  ">
             <div class="navbar bg-red-500 rounded-full pt-5 pb-5 px-10 flex flex-col md:flex-row items-center justify-evenly"> 
               <div class="flex-1 md:ml-10 max-w-l"> <!-- Updated class: md:ml-10 -->
                 <ul class="flex gap-5 text-white">
@@ -41,7 +41,79 @@
               </div>
             </div>
           </nav>
-        <div class="banner-section">
+<!--    nav container for small  device-->
+
+          <nav class="visible position: lg:invisible">
+            <div class="navbar bg-base-100 flex justify-items-stretch">
+            <div class="flex ">
+             <img src="images/logo.png" alt="">
+             <h3 class="text-3xl">Fruit Brust</h3>
+                <div class="justify-items-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current  "><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </div>
+            </div>
+    
+          </div>
+          </nav>
+          
+<!-- banner image part -->
+
+        <div class="banner-section" >
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="/images/banner1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="absolute pt-20 left-0 right-0 text-center text-white">
+                    <h3 class="text-3xl font-semibold">Exotic tastes at your <br> doorstep</h3>
+                    <p class="mt-4">We supply highly quality organic products</p>
+
+                    <button class="btn btn-error mt-4 text-white">Shop Now</button>
+                  </div>
+                </div> 
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="/images/banner2.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="absolute pt-20 left-0 right-0 text-center text-white">
+                    <h3 class="text-3xl font-bold lg:text-10xl">Exotic tastes at your <br> doorstep</h3>
+                    <p class="mt-2">We supply highly quality organic products</p>
+                    <button class="btn btn-error mt-4 text-white">Shop Now</button>
+                  </div>
+                </div> 
+                <!-- slide -3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="/images/banner3.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                  <div class="absolute pt-20 left-0 right-0 text-center text-white">
+                    <h3 class="text-3xl font-semibold">Exotic tastes at your <br> doorstep</h3>
+                    <p class="mt-2">We supply highly quality organic products</p>
+                    <button class="btn btn-error mt-4 text-white">Shop Now</button>
+                  </div>
+                </div> 
+
+                <!-- slide-4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="/images/banner4.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    <div class="absolute pt-20 left-0 right-0 text-center text-white">
+                        <h3 class="text-3xl font-semibold">Exotic tastes at your doorstep</h3>
+                        <p class="mt-2">We supply highly quality organic products</p>
+                        <button class="btn btn-error mt-4 text-white">Shop Now</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
 
         </div>
     </header>
